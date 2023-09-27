@@ -1,4 +1,6 @@
-## SQLite Lab
+## Using Python Data ETL with SQLite
+
+This repository demonstrates how to Extract, Transformat, and Load (ETL) data using python with SQLite. 
 
 ### Lab:
 

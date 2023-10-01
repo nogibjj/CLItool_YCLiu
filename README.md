@@ -1,40 +1,27 @@
-## Using Python Data ETL with SQLite
+## Using Python to Access Database and Perform ETL with SQLite
 
-This repository demonstrates how to Extract, Transformat, and Load (ETL) data using python with SQLite. 
+This repository demonstrates how **access database** and to **Extract**, **Transform**, and **Load** (**ETL**) data using python with **SQLite**.
 
-### Lab:
+Below is an overview of the files in this project:
 
-* Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
-* ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
-For the ETL-Query lab:
-* [E] Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
-* [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
-* [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
-* [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
+1. **Libraries for Database setup and ETL **
+   <br>a. _./mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
+   <br>b. _./mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
+   <br>c. _./mylib/query.py_: **Select** data and display.
+   
+2. **Main functions
+   <br>d. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database.
+   <br>e. _test_main.py_: test functions for the main function.
 
-#### Tasks:
+3. **Github Actions Setup to test different python versions**
+  <br>f. _.github/workflows/main.yml: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
-* Fork this project and get it to run
-* Make the query more useful and not a giant mess that prints to screen
-* Convert the main.py into a command-line tool that lets you run each step independantly
-* Fork this project and do the same thing for a new dataset you choose
-* Make sure your project passes lint/tests and has a built badge
-* Include an architectural diagram showing how the project works
+4. **Other files for development environment settings**
+  <br>g. _.devcontainer_: contains devcontainer, setting up the environment for development.
+  <br>h. _.gitignore_: specifies file names to ignore.
+  <br>i. _requirements.txt_: lists required packages for the project.
 
-#### Reflection Questions
-
-* What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?
-* What insights or new knowledge did you gain from querying the SQLite database?
-* How can SQLite and SQL help make data analysis more efficient? What are the limitations?
-* What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?
-* If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
-
-##### Challenge Exercises
-
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
+5. **Description of the project**
+   <br>j. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.
 
 

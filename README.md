@@ -5,9 +5,9 @@ This repository demonstrates how **access database** and to **Extract**, **Trans
 Below is an overview of the files in this project:
 
 1. **Libraries for Database setup and ETL**
-   <br>a. _./mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
-   <br>b. _./mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
-   <br>c. _./mylib/query.py_: **Select** data and display.
+   <br>a. /mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
+   <br>b. /mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
+   <br>c. /mylib/query.py_: **Select** data and display.
    
 2. **Main functions for CRUD on databse**
    <br>d. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database.

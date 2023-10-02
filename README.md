@@ -12,9 +12,10 @@ Below is an overview of the files in this project:
 2. **Main functions for CRUD on databse**
    <br>d. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database.
    <br>e. _test_main.py_: test if the main function successfully conducts ETL.
-   Example output:<br>
+   <br>Example output:<br>
 
-<img width="601" alt="Screenshot 2023-10-01 at 10 28 41 PM" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/c6e7e588-df9d-406c-ac7e-f86d052608bb">
+<img width="607" alt="Query Output" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/1ce0cc94-1617-48ef-b24d-2d8f27f21670">
+
 
 4. **Github Actions Setup to test different python versions**
   <br>f. _.github/workflows/main.yml: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 

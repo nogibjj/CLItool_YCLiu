@@ -4,7 +4,7 @@ from mylib.query import query
 from mylib.transform_load import load
 from mylib.update import update
 
-def test_main():
+def testMain():
     extract()
     load()
     assert query()[1][1]=='1'

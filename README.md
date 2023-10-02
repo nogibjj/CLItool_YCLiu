@@ -15,13 +15,13 @@ Below is an overview of the files in this project:
 
 3. **Main functions for CRUD on databse**
    <br>f. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database. Specifically, it does the following:
-<br>     1. Download a csv file
-<br>     2. Build SQLite database and load data from csv to the database
-<br>     3. Query the first 10 rows of the database
-<br>     4. Update database content (replace '1' with 'one')
-<br>     5. Query the first 10 rows of the database
-<br>     6. Delete 1 row (the first row with 'id'
-<br>     7. Query the first 10 rows of the database
+<br>       1. Download a csv file
+<br>       2. Build SQLite database and load data from csv to the database
+<br>       3. Query the first 10 rows of the database
+<br>       4. Update database content (replace '1' with 'one')
+<br>       5. Query the first 10 rows of the database
+<br>       6. Delete 1 row (the first row with 'id'
+<br>       7. Query the first 10 rows of the database
 <img width="602" alt="Query Output" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/71fec719-c3d2-4e1e-a9ce-c8e2a6940480">           
 
    <br>g. _test_main.py_: Run all steps in main.py and test if the output query is correct.

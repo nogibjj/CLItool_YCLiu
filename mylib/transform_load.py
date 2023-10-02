@@ -9,10 +9,7 @@ import os
 def load(dataset="data/listing.csv"):
     """"Transforms and Loads data into the local SQLite3 database"""
 
-    #prints the full working directory and path
-    print(os.getcwd())
     payload = csv.reader(open(dataset, newline=''), delimiter=',')
-    print(payload)
     conn = sqlite3.connect('listingDB.db')
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS listingDB")

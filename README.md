@@ -31,9 +31,9 @@ Below is an overview of the files in this project:
   <br>h. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
 5. **Other files for development environment settings**
-  <br>i. _.devcontainer_: contains devcontainer, setting up the environment for development.
-  <br>j. _.gitignore_: specifies file names to ignore.
-  <br>k. _requirements.txt_: lists required packages for the project.
+  <br>i. _.devcontainer_: set up the environment for development.
+  <br>j. _.gitignore_: specify file names to ignore.
+  <br>k. _requirements.txt_: list required packages for the project.
 
 6. **Description of the project**
    <br>l. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.

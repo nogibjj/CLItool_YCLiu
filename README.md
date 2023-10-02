@@ -27,7 +27,7 @@ Below is an overview of the files in this project:
    <br>g. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
 4. **Github Actions Setup to test different python versions**
-  <br>h. _.github/workflows/cicd.yml: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+  <br>h. _.github/workflows/cicd.yml_: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
 5. **Other files for development environment settings**
   <br>i. _.devcontainer_: contains devcontainer, setting up the environment for development.

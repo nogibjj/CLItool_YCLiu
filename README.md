@@ -1,3 +1,4 @@
+[![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
 ## Using Python to Access Database and Perform ETL with SQLite
 
 This repository demonstrates how **access database** and to **Extract**, **Transform**, and **Load** (**ETL**) data using python with **SQLite**.
@@ -13,10 +14,10 @@ Below is an overview of the files in this project:
    <br>d. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database.
    <br>e. _test_main.py_: test if the main function successfully conducts ETL.
    <br>Example output:<br>
-<img width="599" alt="Query Output" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/b3803519-886b-49b9-8c53-c49252126441">
+<img width="602" alt="Query Output" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/71fec719-c3d2-4e1e-a9ce-c8e2a6940480">
 
 4. **Github Actions Setup to test different python versions**
-  <br>f. _.github/workflows/main.yml: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+  <br>f. _.github/workflows/cicd.yml: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
 5. **Other files for development environment settings**
   <br>g. _.devcontainer_: contains devcontainer, setting up the environment for development.

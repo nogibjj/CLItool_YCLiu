@@ -20,14 +20,14 @@ Below is an overview of the files in this project:
 <br>       3. Query the first 10 rows of the database
 <br>       4. Update database content (replace '1' with 'one')
 <br>       5. Query the first 10 rows of the database
-<br>       6. Delete 1 row (the first row with 'id'
+<br>       6. Delete 1 row (the first row with 'id')
 <br>       7. Query the first 10 rows of the database
-
+          Below are the output of the main function:
      <img width="620" alt="Main Output II" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/203ba72a-ddf6-44d9-b3e9-e951d3fcaa2d">
      <img width="620" alt="Main Output I" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/058c8478-688d-4888-a302-65296780720f">
    <br>g. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
-4. **Github Actions Setup to test different python versions**
+4. **Github Actions Setup for continuous integration**
   <br>h. _.github/workflows/cicd.yml_: Development environment was set up using **different versions of python** for later actions. The actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
 5. **Other files for development environment settings**

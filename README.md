@@ -6,11 +6,11 @@ This repository demonstrates how **access database** and to **Extract**, **Trans
 Below is an overview of the files in this project:
 
 1. **Libraries for Database setup and ETL**
-   <br>a. mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
-   <br>b. mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
-   <br>c. mylib/query.py_: **Select** and ouput data.
-   <br>d. mylib/update.py_: **Update** values in the created database.
-   <br>e. mylib/delete.py_: **Delete** and ouput data.
+   <br>a. _mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
+   <br>b. _mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
+   <br>c. _mylib/query.py_: **Select** and ouput data.
+   <br>d. _mylib/update.py_: **Update** values in the created database.
+   <br>e. _mylib/delete.py_: **Delete** and ouput data.
    
 
 3. **Main functions for CRUD on databse**

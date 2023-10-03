@@ -28,7 +28,7 @@ print("Querying data...")
 print(query())
 
 # Delete
-print("deleting data...")
+print("Deleting data...")
 delete()
 
 # Query

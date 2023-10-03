@@ -23,8 +23,9 @@ Below is an overview of the files in this project:
 <br>         6. Delete 1 row (the first row with 'id')
 <br>         7. Query the first 10 rows of the database
 <br>         Below are the output of the main function:<br>
-     <img width="620" alt="Main Output II" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/203ba72a-ddf6-44d9-b3e9-e951d3fcaa2d">
-     <img width="620" alt="Main Output I" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/058c8478-688d-4888-a302-65296780720f">
+     <img width="620" alt="Main Output I" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/203ba72a-ddf6-44d9-b3e9-e951d3fcaa2d">
+     <img width="620" alt="Main output II" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/41b228f1-17dd-4989-9e77-013276aa0c51">
+
    <br>g. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
 4. **Github Actions Setup for continuous integration**

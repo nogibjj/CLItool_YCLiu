@@ -14,7 +14,7 @@ Below is an overview of the files in this project:
    
 
 3. **Main functions for CRUD on databse**
-   <br>f. _main.py_: execute command-line-like functions from ./mylib for CRUD (Create, Read, Update, Delete) on SQLite database. Specifically, it does the following:
+   <br>f. _main.py_: execute command-line-like functions from ./mylib for CRUD (**Create**, **Read**, **Update**, **Delete**) on SQLite database. Specifically, it does the following:
 <br>         1. Download a csv file
 <br>         2. Build SQLite database and load data from csv to the database
 <br>         3. Query the first 10 rows of the database

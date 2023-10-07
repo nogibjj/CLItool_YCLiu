@@ -1,42 +1,31 @@
 [![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
-## Using Python to Access Database and Perform ETL with SQLite
+## Complex queries using SQL on SQL databases
 
-This repository demonstrates how **access database** and to **Extract**, **Transform**, and **Load** (**ETL**) data using python with **SQLite**.
+This repository demonstrates SQL queries that **JOIN** tables and aggregate (**GROUPBY**) under some constraints (**WHERE**). Two toy databases were used to **test queries' functionalities**. 
 
 Below is an overview of the files in this project:
 
-1. **Libraries for Database setup and ETL**
-   <br>a. _mylib/extract.py_: **extract** dataset from an online source (via URL) and save the dataset as csv.
-   <br>b. _mylib/transform_load.py_: **read** the csv produced by extract.py, **create database** and fill in values.
-   <br>c. _mylib/query.py_: **Select** and ouput data.
-   <br>d. _mylib/update.py_: **Update** values in the created database.
-   <br>e. _mylib/delete.py_: **Delete** and ouput data.
+1. **Database setup and Query**
+   <br>a. _mylib/create.py_: **read** the csv produced by extract.py, **create database** and fill in values.
+   <br>b. _mylib/query.py_: **Select** and ouput data.
    
-
-3. **Main functions for CRUD on databse**
-   <br>f. _main.py_: execute command-line-like functions from ./mylib for CRUD (**Create**, **Read**, **Update**, **Delete**) on SQLite database. Specifically, it does the following:
-<br>         1. Download a csv file
-<br>         2. Build SQLite database and load data from csv to the database
-<br>         3. Query the first 10 rows of the database
-<br>         4. Update database content (replace '1' with 'one')
-<br>         5. Query the first 10 rows of the database
-<br>         6. Delete 1 row (the first row with 'id')
-<br>         7. Query the first 10 rows of the database
-<br>         Below are the output of the main function:<br>
-     <img width="620" alt="Main Output I" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/203ba72a-ddf6-44d9-b3e9-e951d3fcaa2d">
-     <img width="620" alt="Main Output II" src="https://github.com/nogibjj/SQLite_YCLiu/assets/46064664/41b228f1-17dd-4989-9e77-013276aa0c51">
-
-   <br>g. _test_main.py_: Run all steps in main.py and test if the output query is correct.
+3. **Main functions for querying on databse**
+   <br>c. _main.py_: execute command-line-like functions from ./mylib to create Database and query on SQLite database. Specifically, it does the following:
+<br>         1. Build and load SQLite database *Customer*, with the following columns: *ID*, *NAME*, *SEX*
+<br>         2. Build and load SQLite database *Transaction*, with the following columns: *ID*,*ITEM*, *AMOUNT*
+<br>         3. Query total sales by item (**SUM** of *AMOUNT* **GROUPBY** *ITEM*).
+<br>         4. Query total sales by female customers (**SUM** of *AMOUNT* **GROUPBY** *ID* **WHERE** *SEX* is *Female*). 
+   <br>d. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
-4. **Github Actions Setup for continuous integration**
-  <br>h. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+5. **Github Actions Setup for continuous integration**
+  <br>e. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
-5. **Other files for development environment settings**
-  <br>i. _.devcontainer_: set up the environment for development.
-  <br>j. _.gitignore_: specify file names to ignore.
-  <br>k. _requirements.txt_: list required packages for the project.
+6. **Other files for development environment settings**
+  <br>f. _.devcontainer_: set up the environment for development.
+  <br>g. _.gitignore_: specify file names to ignore.
+  <br>h. _requirements.txt_: list required packages for the project.
 
-6. **Description of the project**
-   <br>l. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.
+7. **Description of the project**
+   <br>i. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.
 
 

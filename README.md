@@ -11,10 +11,10 @@ Below is an overview of the files in this project:
    
 3. **Main functions for querying on databse**
    <br>c. _main.py_: execute command-line-like functions from ./mylib to create Database and query on SQLite database. Specifically, it does the following:
-<br>         1. Build and load SQLite database *Customer*, with the following columns: *ID*, *NAME*, *SEX*
-<br>         2. Build and load SQLite database *Transaction*, with the following columns: *ID*,*ITEM*, *AMOUNT*
-<br>         3. Query total sales by item (**SUM** of *AMOUNT* **GROUPBY** *ITEM*).
-<br>         4. Query total sales by female customers (**SUM** of *AMOUNT* **GROUPBY** *ID* **WHERE** *SEX* is *Female*). 
+<br>         1. Build and load SQLite database *Customer*, with the following columns: *id*, *name*, *sex*
+<br>         2. Build and load SQLite database *Transaction*, with the following columns: *id*,*item*, *amount*
+<br>         3. Query total sales by item (**SUM** of *amount* **GROUPBY** *item*) by descending order (**ORDER BY** *item* **DESC**).
+<br>         4. Query total sales by female customers (**SUM** of *amount* **GROUPBY** *id* **WHERE** *sex* is *Female*) by descending order (**ORDER BY** *id* **DESC**).
    <br>d. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
 5. **Github Actions Setup for continuous integration**

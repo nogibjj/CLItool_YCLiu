@@ -6,12 +6,12 @@ This repository demonstrates a SQL query that **JOIN**s tables, aggregate (**GRO
 Below is an overview of the files in this project:
 
 1. **Database setup and query**
-   <br>a. _mylib/create.py_: **Build database**, **create tables**, fill in values.
+   <br>a. _mylib/create.py_: **Build a database**, **create tables**, fill in values.
    <br>b. _mylib/query.py_: **Select** and ouput **data**.
    
 3. **Main functions for querying on databse**
    <br>c. _main.py_: execute command-line-like functions from ./mylib to create Database and query on SQLite database. Specifically, it does the following:
-<br>         1. Build SQLite database _Transaction.db_.
+<br>         1. Build a SQLite database _Transaction.db_.
 <br>         2. Create table *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
 
 **Customer table**

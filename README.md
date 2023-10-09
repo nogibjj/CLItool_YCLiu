@@ -6,8 +6,8 @@ This repository demonstrates a SQL query that **JOIN**s tables, aggregate (**GRO
 Below is an overview of the files in this project:
 
 1. **Database setup and Query**
-   <br>a. _mylib/create.py_: **read** the csv produced by extract.py, **create database** and fill in values.
-   <br>b. _mylib/query.py_: **Select** and ouput data.
+   <br>a. _mylib/create.py_: **Build database**, **create tables**, fill in values.
+   <br>b. _mylib/query.py_: **Select** and ouput **data**.
    
 3. **Main functions for querying on databse**
    <br>c. _main.py_: execute command-line-like functions from ./mylib to create Database and query on SQLite database. Specifically, it does the following:
@@ -41,7 +41,7 @@ Below is an overview of the files in this project:
 |**_005_**| Hamburger | `80` |
 
 
-<br>         3. Query total sales amount of all _female_ customers and display the resulted table in descending order (by total sales amount per customer). The **associated SQL code is displayed in the code block** below **with detailed explanation in comment**. The resulted table is displayed in **Query Result** further down.
+<br>         3. Query total _amount_ purchased of all _female_ customers and display the resulted table in _descending order_ (by total amount purchased per customer). The **associated SQL code is displayed in the code block** below **with detailed explanation in comment**. The resulted table is displayed in **Query Result** further down.
 
 ```
 #SQL Query
@@ -49,14 +49,14 @@ Below is an overview of the files in this project:
 SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
         SUM(t2.amount) AS total_amount   # sum the numbers in the amount column from t2, name it as *total_amount*.
         FROM Customer t1                 # identify a source table, the Customer table, named  as t1
-        INNER JOIN TXR t2                # joins another source table, the TXR table, named  as t1
+        INNER JOIN TXR t2                # joins another source table, the TXR table, named  as t2
                                          # INNER JOIN means to connect the tables with a key column
                                          # whehre only columns values presented in *both* tables will be inlcuded
         ON t1.cust_id = t2.cust_id       # identify the key column to join the tables: *cust_id*
-        WHERE t1.sex ='Female'           # specifies that only rows with *sex* column value equals 'female' will be queried
-        GROUP BY t1.cust_id              # specifies the resulted (sum in the 2nd line) is aggregated on cust_id
-        ORDER BY total_amount DESC       # specify that the resuled table are displayed from the cust_id with highest
-                                         # total_amount (sum of amounnnt per cust_id) to lowest (DESC)                                      
+        WHERE t1.sex ='Female'           # specify that only rows with *sex* column value equals 'female' will be queried
+        GROUP BY t1.cust_id              # specify the result (*sum* in the 2nd line) is aggregated on cust_id
+        ORDER BY total_amount DESC       # specify that the query is displayed from the cust_id with 
+                                         # highest total_amount (sum of amount per cust_id) to lowest (DESC)                                      
 ```
 
 **Query Result**

@@ -31,6 +31,8 @@ Below is an overview of the files in this project:
 |---|---|---|
 |001| Hot Dog | 100 |
 |001| Hot Dog | 20 |
+|**_002_**| Hamburger | `80` |
+|**_002_**| Hot Dog | `120` |
 
 <br>         3. Query total sales by female customers (**SUM** of *amount* **GROUPBY** *id* **WHERE** *sex* is *Female*) by descending order (**ORDER BY** *id* **DESC**).
 

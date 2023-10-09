@@ -24,7 +24,7 @@ Below is an overview of the files in this project:
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
 
-<br>         2. Build and load SQLite database *TXR* (short for transaction), with the following columns: *cust_id*,*item*, *amount*. Below is the content of the resulted table.
+<br>         3. Build and load SQLite database *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**
 | cust_id | item | amount |
@@ -41,7 +41,7 @@ Below is an overview of the files in this project:
 |**_005_**| Hamburger | `80` |
 
 
-<br>         3. Query total _amount_ purchased of all _female_ customers and display the resulted table in _descending order_ (by total amount purchased per customer). The **associated SQL code is displayed in the _code block_** below **with detailed explanation in comment**. The resulted table is displayed in **Query Result** further down.
+<br>         4. Query total _amount_ purchased of all _female_ customers and display the resulted table in _descending order_ (by total amount purchased per customer). The **associated SQL code is displayed in the _code block_** below **with detailed explanation in comment**. The resulted table is displayed in **Query Result** further down.
 
 ```
 #SQL Query
@@ -51,7 +51,7 @@ SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
         FROM Customer t1                 # identify a source table, the Customer table, named  as t1
         INNER JOIN TXR t2                # joins another source table, the TXR table, named  as t2
                                          # INNER JOIN means to connect the tables with a key column
-                                         # where only columns values presented in *both* tables will be inlcuded
+                                         # where only columns values presented in *both* tables will be included
         ON t1.cust_id = t2.cust_id       # identify the key column to join the tables: *cust_id*
         WHERE t1.sex ='Female'           # specify that only rows with *sex* column value equals 'female' will be queried
         GROUP BY t1.cust_id              # specify the result (*sum* in the 2nd line) is aggregated on cust_id
@@ -61,7 +61,7 @@ SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
 
 **Query Result**
 
-The resulted query contains the columns and rows in **bold** in the above Customer and TXR table, which is the **total amount** of purchase of every **female** customer. Note that the _values_ of the _total_amount_ column (with `_gray_ background`) is the **sum of amount** (with `_gray_ background` in the TXR table) purchased by each female customer. The resulted table is displayed in descending order of _total_amount_, which means the first row is the female customer with the **highest** _total_amount_ of purchanse (here, Sharon) and the last row is the female customer with the **lowest** _total_mount_ of purchase (here, Devin).
+The resulted query contains the columns and rows in **bold** in the above Customer and TXR table, which is the **total amount** of purchase of every **female** customer. Note that the _values_ of the _total_amount_ column (with `_gray_ background`) is the **sum of amount** (with `_gray_ background` in the TXR table) purchased by each female customer. The resulted table is displayed in descending order of _total_amount_, which means the first row is the female customer with the **highest** _total_amount_ purchased (here, Sharon) and the last row is the female customer with the **lowest** _total_mount_ purchased (here, Devin).
 
 | cust_id | name | sex | total_amount |
 |---|---|---|---|

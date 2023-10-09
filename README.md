@@ -27,19 +27,11 @@ Below is an overview of the files in this project:
 <br>         2. Build and load SQLite database *Transaction*, with the following columns: *cust_id*,*item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**
-
 | cust_id | item | amount |
 |---|---|---|
 |001| Hot Dog | 100 |
 |001| Hot Dog | 20 |
-|**_002_**| Hamburger | `80` |
-|**_002_**| Hot Dog | `120` |
-|**_003_**| Hamburger | `60` |
-|**_003_**| Hot Dog | `200` |
-|004| Hot Dog | 40 | 
-|004| Hamburger | 140 | 
-|**_005_**| Hamburger | `150` |
-|**_005_**| Hamburger | `80` |
+
 <br>         3. Query total sales by female customers (**SUM** of *amount* **GROUPBY** *id* **WHERE** *sex* is *Female*) by descending order (**ORDER BY** *id* **DESC**).
 
 ```

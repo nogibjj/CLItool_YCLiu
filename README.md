@@ -5,7 +5,7 @@ This repository demonstrates a SQL query that **JOIN**s tables, aggregate (**GRO
 
 Below is an overview of the files in this project:
 
-1. **Database setup and Query**
+1. **Database setup and query**
    <br>a. _mylib/create.py_: **Build database**, **create tables**, fill in values.
    <br>b. _mylib/query.py_: **Select** and ouput **data**.
    
@@ -71,7 +71,7 @@ The resulted query contains the columns and rows in **bold** in the above Custom
 
    <br>d. _test_main.py_: Run all steps in main.py and test if the output query is correct.
    
-5. **Github Actions Setup for continuous integration**
+5. **Github actions setup for continuous integration**
   <br>e. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
 6. **Other files for development environment settings**

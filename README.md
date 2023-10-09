@@ -36,7 +36,7 @@ Below is an overview of the files in this project:
 |**_003_**| Hamburger | `60` |
 |**_003_**| Hot Dog | `200` |
 |004| Hot Dog | 40 |
-|004| Hot Dog | 140 |
+|004| Hamburger | 140 |
 |**_005_**| Hamburger | `150` |
 |**_005_**| Hamburger | `80` |
 

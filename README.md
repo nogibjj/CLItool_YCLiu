@@ -1,7 +1,7 @@
 [![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
 ## Complex queries using SQL on SQL databases
 
-This repository demonstrates SQL queries that **JOIN** tables and aggregate (**GROUPBY**) under some constraints (**WHERE**). Two toy databases were used to **test queries' functionalities**. 
+This repository demonstrates a SQL query that **JOIN**s tables, aggregate (**GROUPBY**) numbers under constraints (**WHERE**), displayed in a certain **ORDER**. Two toy databases were used to **test queries' functionalities**. 
 
 Below is an overview of the files in this project:
 
@@ -24,7 +24,7 @@ Below is an overview of the files in this project:
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
 
-<br>         2. Build and load SQLite database *Transaction*, with the following columns: *cust_id*,*item*, *amount*. Below is the content of the resulted table.
+<br>         2. Build and load SQLite database *TXR* (short for transaction), with the following columns: *cust_id*,*item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**
 | cust_id | item | amount |
@@ -41,19 +41,22 @@ Below is an overview of the files in this project:
 |**_005_**| Hamburger | `80` |
 
 
-<br>         3. Query total sales by female customers (**SUM** of *amount* **GROUPBY** *id* **WHERE** *sex* is *Female*) by descending order (**ORDER BY** *id* **DESC**).
+<br>         3. Query total sales amount of all _female_ customers and display the resulted table in descending order (by sales amount, see **Query Result** below).
 
 ```
 #SQL Query
 
-SELECT t1.cust_id, t1.name, t1.sex,
-        SUM(t2.amount) AS total_amount 
-        FROM Customer t1
-        INNER JOIN TXR t2
-        ON t1.cust_id = t2.cust_id
-        WHERE t1.sex ='Female'
-        GROUP BY t1.cust_id
-        ORDER BY total_amount DESC
+SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
+        SUM(t2.amount) AS total_amount   # sum the numbers in the amount column from t2, name it as *total_amount*.
+        FROM Customer t1                 # identify a source table, the Customer table, named  as t1
+        INNER JOIN TXR t2                # joins another source table, the TXR table, named  as t1
+                                         # INNER JOIN means to connect the tables with a key column
+                                         # whehre only columns values presented in *both* tables will be inlcuded
+        ON t1.cust_id = t2.cust_id       # identify the key column to join the tables: *cust_id*
+        WHERE t1.sex ='Female'           # specifies that only rows with *sex* column value equals 'female' will be queried
+        GROUP BY t1.cust_id              # specifies the resulted (sum in the 2nd line) is aggregated on cust_id
+        ORDER BY total_amount DESC       # specify that the resuled table are displayed from the cust_id with highest
+                                         # total_amount (sum of amounnnt per cust_id) to lowest (DESC)                                      
 ```
 
 **Query Result**

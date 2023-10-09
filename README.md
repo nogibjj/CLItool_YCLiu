@@ -33,8 +33,8 @@ Below is an overview of the files in this project:
 |001| Hot Dog | 20 |
 |**_002_**| Hamburger | `80` |
 |**_002_**| Hot Dog | `120` |
-|**_002_**| Hamburger | `60` |
-|**_002_**| Hot Dog | `200` |
+|**_003_**| Hamburger | `60` |
+|**_003_**| Hot Dog | `200` |
 |004| Hot Dog | 40 |
 |004| Hot Dog | 140 |
 |**_005_**| Hamburger | `150` |

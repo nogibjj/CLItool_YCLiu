@@ -61,7 +61,7 @@ SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
 
 **Query Result**
 
-The resulted query contains the columns and rows in **bold** in the above Customer and TXR table, which is the **total amount** of purchase of every **female** customer (with their _cust_id_, _name_ and _sex_). Note that the _values_ of the _total_amount_ column (with `_gray_ background`) is the **sum of amount** (with `_gray_ background` in the TXR table) purchased by each female customer. The resulted table is displayed in descending order of _total_amount_, which means the first row is the female customer with the **highest** _total_amount_ purchased (here, Sharon) and the last row is the female customer with the **lowest** _total_mount_ purchased (here, Devin).
+The resulted query contains the columns and rows in **bold** in the above Customer and TXR table, which is the **total amount** of purchase of every **female** customer (with their _cust_id_, _name_ and _sex_). Note that the _values_ of the _total_amount_ column (with `gray background`) is the **sum of amount** (with `gray background` in the TXR table) purchased by each female customer. The resulted table is displayed in descending order of _total_amount_, which means the first row is the female customer with the **highest** _total_amount_ purchased (here, Sharon) and the last row is the female customer with the **lowest** _total_mount_ purchased (here, Devin).
 
 | cust_id | name | sex | total_amount |
 |---|---|---|---|

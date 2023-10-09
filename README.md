@@ -23,6 +23,7 @@ Below is an overview of the files in this project:
 |**_003_**| **_Sharon_** | **_Female_** |
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
+
 <br>         2. Build and load SQLite database *Transaction*, with the following columns: *cust_id*,*item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**

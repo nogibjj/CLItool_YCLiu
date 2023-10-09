@@ -53,7 +53,7 @@ SELECT t1.cust_id, t1.name, t1.sex,      # select the columns from t1.
                                          # INNER JOIN means to connect the tables with a key column
                                          # where only columns values presented in *both* tables will be included
         ON t1.cust_id = t2.cust_id       # identify the key column to join the tables: *cust_id*
-        WHERE t1.sex ='Female'           # specify that only rows with *sex* column value equals 'female' will be queried
+        WHERE t1.sex ='Female'           # specify that only rows with *sex* column values that equal to 'female' will be queried
         GROUP BY t1.cust_id              # specify the result (*sum* in the 2nd line) is aggregated on cust_id
         ORDER BY total_amount DESC       # specify that the query is displayed from the cust_id with 
                                          # highest total_amount (sum of amount per cust_id) to lowest (DESC)                                      

@@ -12,7 +12,7 @@ Below is an overview of the files in this project:
 3. **Main functions for querying on databse**
    <br>c. _main.py_: execute command-line-like functions from ./mylib to create a database, tables, and to query on the created database. Specifically, it does the following:
 <br>         1. Build a SQLite database _Transaction.db_.
-<br>         2. Create table *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
+<br>         2. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
 
 **Customer table**
 
@@ -24,7 +24,7 @@ Below is an overview of the files in this project:
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
 
-<br>         3. Build and load SQLite database *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
+<br>         3. Create a table named *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**
 | cust_id | item | amount |

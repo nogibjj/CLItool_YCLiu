@@ -11,7 +11,7 @@ Below is an overview of the files in this project:
    
 3. **Main functions for querying on databse**
    <br>c. _main.py_: execute command-line-like functions from ./mylib to create Database and query on SQLite database. Specifically, it does the following:
-<br>         1. Build SQLite database Transaction.db.
+<br>         1. Build SQLite database _Transaction.db_.
 <br>         2. Create table *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
 
 **Customer table**

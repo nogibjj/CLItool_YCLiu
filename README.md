@@ -41,7 +41,7 @@ Below is an overview of the files in this project:
 |**_005_**| Hamburger | `80` |
 
 
-<br>         3. Query total sales amount of all _female_ customers and display the resulted table in descending order (by total sales amount per customer). The assocuted SQL code is displayed in the code block below with detailed explanation. The resulted table is displayed in **Query Result** further down.
+<br>         3. Query total sales amount of all _female_ customers and display the resulted table in descending order (by total sales amount per customer). The **associated SQL code is displayed in the code block** below **with detailed explanation in comment**. The resulted table is displayed in **Query Result** further down.
 
 ```
 #SQL Query

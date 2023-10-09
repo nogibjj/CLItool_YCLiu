@@ -1,5 +1,5 @@
 [![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
-## Complex queries using SQL on SQL databases
+## Complex queries using SQL on SQLite databases
 
 This repository demonstrates a SQL query that **JOIN**s tables, aggregate (**GROUPBY**) numbers under constraints (**WHERE**), displayed in a certain **ORDER**. Two tables were created using SQLite to **test the query's functionality**. 
 

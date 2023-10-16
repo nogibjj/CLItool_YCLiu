@@ -11,6 +11,8 @@ def testMain(name):
     assert len(output) == 2
     assert output[0][0] == "Customer"
     assert output[1][0] == "TXR"
+    return "Success"
+
 if __name__ == '__main__':
     testMain('Transactions.db')
     pass

@@ -23,22 +23,6 @@ Below is an overview of the files in this project:
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
 
-<br>         3. Create a table named *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
-
-**TXR table**
-| cust_id | item | amount |
-|---|---|---|
-|001| Hot Dog | 100 |
-|001| Hot Dog | 20 |
-|**_002_**| Hamburger | `80` |
-|**_002_**| Hot Dog | `120` |
-|**_003_**| Hamburger | `60` |
-|**_003_**| Hot Dog | `200` |
-|004| Hot Dog | 40 |
-|004| Hamburger | 140 |
-|**_005_**| Hamburger | `150` |
-|**_005_**| Hamburger | `80` |
-
    
 4. **Github actions setup for continuous integration**
   <br>c. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 

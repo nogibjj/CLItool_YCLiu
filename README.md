@@ -6,7 +6,7 @@ This repository demos how to use the python *click* library to build command-lin
 Below is an overview of the files in this project:
 
 1. **The Downloadable Package to Browse Database Content**
-   <br> a. _dist/database-browser-0.0.1.tar.gz_: ***Download this file***, following the step below, you can use the tool to ***output all table names in an existing SQLite databas***.
+   <br> a. _dist/database-browser-0.0.1.tar.gz_: ***Download this file***, following the step below, you can use the tool to ***output all table names in an existing SQLite database***.
    <br> Step 1: **Unzip** the file and put it in the desired directory.
    <br> Step 2: **Use the terminal to navigate to the directory** (where you can see the *main.py* file).
    <br> Step 3: **Enter the following command** in the terminal and **press enter**. The ***name of the tables*** in the specified SQLite database will be ***printed out line by line***.

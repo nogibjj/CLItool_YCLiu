@@ -1,5 +1,5 @@
 import click
-from create import create
+from dbBrowser import create
 import sqlite3
 
 @click.command()

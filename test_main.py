@@ -1,8 +1,16 @@
-from dbBrowser.create import create
-from dbBrowser.query import query
+import sqlite3
 
-def testMain():
-    pass
+def testMain(name):
+    conn = sqlite3.connect(name)
+    cursor = conn.cursor()   
+    cursor.execute("SELECT name FROM sqlite_master\
+                   WHERE type='table'\
+                   ORDER BY name;")    
+    output = cursor.fetchall()
+    conn.close()
+    assert len(output) == 2
+    assert output[0][0] == "Customer"
+    assert output[1][0] == "TXR"
 if __name__ == '__main__':
-    testMain()
+    testMain('Transactions.db')
     pass

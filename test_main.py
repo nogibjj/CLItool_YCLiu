@@ -1,5 +1,5 @@
-from mylib.create import create
-from mylib.query import query
+from dbBrowser.create import create
+from dbBrowser.query import query
 
 def testMain():
     pass

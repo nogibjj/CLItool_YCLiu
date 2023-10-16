@@ -15,7 +15,7 @@ Below is an overview of the files in this project:
    ```
 
    **Example output**:
-   <img width="552" alt="Example Output" src="https://github.com/nogibjj/CLItool_YCLiu/assets/46064664/79a87923-1f44-46ca-96ed-4e9282f45838">
+   <br><img width="552" alt="Example Output" src="https://github.com/nogibjj/CLItool_YCLiu/assets/46064664/79a87923-1f44-46ca-96ed-4e9282f45838">
    
 2. **Homebrew Library Setup**
    <br>b. _dbBrowser/create.py_: **Build a database**, **create tables**, fill in values.

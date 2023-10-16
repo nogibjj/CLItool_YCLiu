@@ -51,8 +51,8 @@ Below is an overview of the files in this project:
 
 <br>         iv. Using **python click**, a function called *findTables* is defined to print out all the tables in the specified SQLite database. The **user manuel** is detailed in **Section 1a**. Note that *if the input database directory does not exist*, the function will *throw an error*.
    
-3. **Specification for Packging Library**
-  <br>d. *setup.py*: Details of for **packaginng the dbBrowser** library (e.g. required dependencies, version name, author name etc.) were specified in the file. The *tar* file in **section 1a** is generated using *setup.py*.
+3. **Specification for Packaging Library**
+  <br>d. *setup.py*: Details of for **packaging the dbBrowser** library (e.g. required dependencies, version name, author name etc.) were specified in the file. The *tar* file in **section 1a** is generated using *setup.py*.
 4. **Test Main Function**
    <br>e. *test_main.py*: Test the code in the main function and check if the output is correct usinng *Transactions.db*.
 5. **Github actions setup for continuous integration**

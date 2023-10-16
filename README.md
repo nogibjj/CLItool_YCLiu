@@ -49,14 +49,14 @@ Below is an overview of the files in this project:
 |005| Hamburger | 150 |
 |005| Hamburger | 80 |
 
-<br>         iv. Using **python click**, a function called *findTables* is defined to print out all the tables in the specified SQLite database. The **user manuel** is detailed in **Section 1a**. Note that *if the input database directory does not exist*, the function will *throw an error*.
+<br>         iv. Using **python click**, a function called *findTables* is defined to print out all the tables in the specified SQLite database. The **user manual** is detailed in **Section 1a**. Note that *if the input database directory does not exist*, the function will *throw an error*.
    
 3. **Specification for Packaging Library**
   <br>d. *setup.py*: Details of for **packaging the dbBrowser** library (e.g. required dependencies, version name, author name etc.) were specified in the file. The *tar* file in **section 1a** is generated using *setup.py*.
 4. **Test Main Function**
    <br>e. *test_main.py*: Test the code in the main function and check if the output is correct usinng *Transactions.db*.
 5. **Github actions setup for continuous integration**
-  <br>f. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+  <br>f. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of installing packages, linting, testing, formatting would be executed in order (specified in Makefile). 
 
 6. **Other files for development environment settings**
   <br>g. _.devcontainer_: set up the environment for development.

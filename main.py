@@ -1,11 +1,10 @@
-"""
-ETL-Query script
-"""
-from mylib.create import create
-from mylib.query import query
+import click
 
-# Create
-print("Creating database...")
-create()
-print("Querying database...")
-print(query())
+@click.command()
+@click.option("--name", prompt = "Please enter your name", help = "The name of the user")
+
+def hello(name):
+    click.echo(f"Hello {name}!")
+
+if __name__ == "__main__":
+    hello()

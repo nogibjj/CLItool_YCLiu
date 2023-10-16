@@ -20,7 +20,7 @@ Below is an overview of the files in this project:
 2. **Homebrew Library Setup**
    <br>b. _dbBrowser/create.py_: **Build a database**, **create tables**, fill in values.
    <br>c. _dbBrowser/main.py_: Execute create.py to create database and tables. Then use **python click** define a function to **print out all table names** in the specified *SQLite* database. Below are the details of the main function:
-<br>         i. Build a SQLite database _Transaction.db_.
+<br>         i. Build a SQLite database _Transactions.db_.
 <br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
 
 **Customer table**
@@ -54,7 +54,7 @@ Below is an overview of the files in this project:
 3. **Specification for Packaging Library**
   <br>d. *setup.py*: Details of for **packaging the dbBrowser** library (e.g. required dependencies, version name, author name etc.) were specified in the file. The *tar* file in **section 1a** is generated using *setup.py*.
 4. **Test Main Function**
-   <br>e. *test_main.py*: Test the code in the main function and check if the output is correct usinng *Transactions.db*.
+   <br>e. *test_main.py*: Test the code in the main function and check if the output is correct using *Transactions.db*.
 5. **Github actions setup for continuous integration**
   <br>f. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of installing packages, linting, testing, formatting would be executed in order (specified in Makefile). 
 

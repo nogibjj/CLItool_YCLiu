@@ -1,17 +1,27 @@
 [![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
-## Use Python Click to Develop Command-Line like Tool
+## Use Python to Develop and *Distribute* Command-Line like Tool
 
-This repository demos how to use the python *click* library to build command-line-like tool to get information from database. Two tables were created using SQLite to test the tool's functionalities. 
+This repository demos how to use the python *click* library to build command-line-like tool to get information from database. Two tables were created using SQLite to test the tool's functionalities. The tool is then turned in to a **downloadable distribution** for users to use.
 
 Below is an overview of the files in this project:
 
-1. **Database setup**
-   <br>a. _mylib/create.py_: **Build a database**, **create tables**, fill in values.
+1. **The Downloadable Package for Glimpsing Database Content**
+   a. _dist/database-browser-0.0.1.tar.gz_: ***Download this file***, following the step below, you can use the tool to ***output all table names in an existing SQLite databas***.
+   Step 1: **Unzip** the file and put it in the desired directory.
+   Step 2: **Use the terminal to navigate to the directory** (where you can see the *main.py* file).
+   Step 3: **Enter the following command** in the terminal and **press enter**. The ***name of the tables*** in the specified SQLite database will be ***printed out line by line***.
+   ```
+          python3 main.py "directoryToASQLiteDb"
+   ```
+
+   **Example output**:
+   <img width="552" alt="Example Output" src="https://github.com/nogibjj/CLItool_YCLiu/assets/46064664/79a87923-1f44-46ca-96ed-4e9282f45838">
    
-3. **Main functions for querying on databse**
-   <br>b. _main.py_: execute command-line-like functions from ./mylib to create a database, tables, and to query on the created database. Specifically, it does the following:
-<br>         1. Build a SQLite database _Transaction.db_.
-<br>         2. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
+2. **Homebrew Library Setup**
+   <br>b. _dbBrowser/create.py_: **Build a database**, **create tables**, fill in values.
+   <br>c. _dbBrowser/main.py_: Execute create.py to create database and tables. Then use **python click** define a function to **print out all table names** in the specified *SQLite* database. Below are the details of the main function:
+<br>         i. Build a SQLite database _Transaction.db_.
+<br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
 
 **Customer table**
 
@@ -22,17 +32,37 @@ Below is an overview of the files in this project:
 |**_003_**| **_Sharon_** | **_Female_** |
 |004| Tim | Male | 
 |**_005_**| **_Tina_** | **_Female_** |
+<br>         iii. Create a table named *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
 
+**TXR table**
+| cust_id | item | amount |
+|---|---|---|
+|001| Hot Dog | 100 |
+|001| Hot Dog | 20 |
+|**_002_**| Hamburger | `80` |
+|**_002_**| Hot Dog | `120` |
+|**_003_**| Hamburger | `60` |
+|**_003_**| Hot Dog | `200` |
+|004| Hot Dog | 40 |
+|004| Hamburger | 140 |
+|**_005_**| Hamburger | `150` |
+|**_005_**| Hamburger | `80` |
+
+<br>         iv. Using **python click**, a function called *findTables* is defined to print out all the tables in the specified SQLite database. The **user manuel** is detailed in **Section 1a**. Note that *if the input database directory does not exist*, the function will *throw an error*.
    
-4. **Github actions setup for continuous integration**
-  <br>c. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+3. **Specification for Packging Library**
+  <br>d. *setup.py*: Details of for **packaginng the dbBrowser** library (e.g. required dependencies, version name, author name etc.) were specified in the file. The *tar* file in **section 1a** is generated using *setup.py*.
+4. **Test Main Function**
+   <br>e. *test_main.py*: Test the code in the main function and check if the output is correct usinng *Transactions.db*.
+5. **Github actions setup for continuous integration**
+  <br>f. _.github/workflows/cicd.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
-5. **Other files for development environment settings**
-  <br>d. _.devcontainer_: set up the environment for development.
-  <br>e. _.gitignore_: specify file names to ignore.
-  <br>f. _requirements.txt_: list required packages for the project.
+6. **Other files for development environment settings**
+  <br>g. _.devcontainer_: set up the environment for development.
+  <br>h. _.gitignore_: specify file names to ignore.
+  <br>i. _requirements.txt_: list required packages for the project.
 
-6. **Description of the project**
-   <br>g. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.
+7. **Description of the project**
+   <br>j. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with screenshot of example output.
 
 

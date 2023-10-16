@@ -1,5 +1,5 @@
 [![CI](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/SQLite_YCLiu/actions/workflows/cicd.yml)
-## Use Python to Develop and *Distribute* Command-Line like Tool
+## Use Python to Develop and *Distribute* A Command-Line-Like Tool
 
 This repository demos how to use the python *click* library to build command-line-like tool to get information from database. Two tables were created using SQLite to test the tool's functionalities. The tool is then turned in to a **downloadable distribution** for users to use.
 

@@ -28,10 +28,11 @@ Below is an overview of the files in this project:
 | cust_id | name | sex |
 |---|---|---|
 |001| John | Male |
-|**_002_**| **_Devin_** | **_Female_** |
-|**_003_**| **_Sharon_** | **_Female_** |
+|002| Devin | Female |
+|003| Sharon | Female |
 |004| Tim | Male | 
-|**_005_**| **_Tina_** | **_Female_** |
+|005| Tina | Female |
+
 <br>         iii. Create a table named *TXR* (short for transaction), with the following columns: *cust_id*, *item*, *amount*. Below is the content of the resulted table.
 
 **TXR table**
@@ -39,14 +40,14 @@ Below is an overview of the files in this project:
 |---|---|---|
 |001| Hot Dog | 100 |
 |001| Hot Dog | 20 |
-|**_002_**| Hamburger | `80` |
-|**_002_**| Hot Dog | `120` |
-|**_003_**| Hamburger | `60` |
-|**_003_**| Hot Dog | `200` |
+|002| Hamburger | 80 |
+|002| Hot Dog | 120 |
+|003| Hamburger | 60 |
+|003| Hot Dog | 200 |
 |004| Hot Dog | 40 |
 |004| Hamburger | 140 |
-|**_005_**| Hamburger | `150` |
-|**_005_**| Hamburger | `80` |
+|005| Hamburger | 150 |
+|005| Hamburger | 80 |
 
 <br>         iv. Using **python click**, a function called *findTables* is defined to print out all the tables in the specified SQLite database. The **user manuel** is detailed in **Section 1a**. Note that *if the input database directory does not exist*, the function will *throw an error*.
    

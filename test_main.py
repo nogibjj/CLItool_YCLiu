@@ -1,7 +1,7 @@
 import sqlite3
 
-def testMain(name):
-    conn = sqlite3.connect(name)
+def testMain():
+    conn = sqlite3.connect('Transactions.db')
     cursor = conn.cursor()   
     cursor.execute("SELECT name FROM sqlite_master\
                    WHERE type='table'\
@@ -14,5 +14,5 @@ def testMain(name):
     return "Success"
 
 if __name__ == '__main__':
-    testMain('Transactions.db')
+    testMain()
     pass

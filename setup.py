@@ -5,7 +5,7 @@ setup(
     description = 'a simple command line tool to explore db tables',
     packages = find_packages(),
     author='Yun-Chung Liu',
-    install_requires = ['click==8.1.3', 'sqlite3==3.43.0'],
+    install_requires = ['click==8.1.3', 'sqlite3'],
     extras_require = {"dev":"pytest >=7.0"},
     python_requires=">=3.9",
     version = '0.0.1',
